@@ -1,0 +1,11 @@
+#board{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cards-options{
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

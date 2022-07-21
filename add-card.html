@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add a card</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/form.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><h1>Logo</h1></a>
+            <div id="menu">
+                <button class="button">Estudar</button>
+                <a href="add-card.html"><button class="button">Adicionar cartão</button></a>
+            </div>
+        </header>
+        <main>
+            <div id="board">
+                <h2>Adicionar novo cartão</h2>
+                <form onsubmit="salvarCard()">
+                    <div class="field">
+                        <label for="category">Categoria:</label>
+                        <select name="category" id="category" required >
+                            <option value="" selected disabled>Selecione aqui a categoria do cartão</option>
+                            <option value="geral">Geral</option>
+                            <option value="código">Código</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="front">Frente:</label>
+                        <input id="front" required type="text" placeholder="Insira aqui o conteúdo da frente do cartão" />
+                    </div>
+                    <div class="field">
+                        <label for="back">Verso:</label>
+                        <input id="back" required type="text" placeholder="Insira aqui o conteúdo da frente do cartão" />
+                    </div>
+                    <div id="form-options">
+                        <button class="button" id="cancel">Descartar</button>
+                        <button type="submit" class="button" id="save">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+    border:none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+body{
+    height: 100vh;
+}

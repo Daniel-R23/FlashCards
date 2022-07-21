@@ -1,0 +1,18 @@
+main{
+    width: 100%;
+    height: calc(100% - 80px);
+    padding: 30px;
+}
+#counter{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#board{
+    min-height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
